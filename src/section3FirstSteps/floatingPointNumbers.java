@@ -11,5 +11,9 @@ public class floatingPointNumbers {
         double myMaxDoubleValue = Double.MAX_VALUE;
         System.out.println("Double Min Value = " + myMinDoubleValue);
         System.out.println("Double Max Value = " + myMaxDoubleValue);
+
+        int myIntValue = 5;
+        float myFloatValue = 5.25f;
+        double myDoubleValue = 5.25;
     }
 }
