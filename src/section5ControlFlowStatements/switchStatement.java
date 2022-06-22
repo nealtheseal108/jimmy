@@ -1,6 +1,6 @@
 package section5ControlFlowStatements;
 
-public class switchStatements {
+public class switchStatement {
     public static void main(String[] args) {
         /*int value = 2;
         if (value == 1) {
