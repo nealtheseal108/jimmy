@@ -46,3 +46,4 @@ public class Car {
 // 'get' method returns the value of the field, getter, has no parameters
 // String is a special class
 // public setters and getters allow any class to get and set fields
+// always set parameters after new ____(); in parenthesis
