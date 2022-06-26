@@ -41,7 +41,7 @@ public class Car {
 // in terms of fields, you should usually use 'private' to adhere to encapsulation
 // encapsulation is used to hide fields and methods from public access, hidden from view outside of the place of the object's definition
 // 'set' method initializes variables, has one parameter which is the value, can modify private fields, setter
-// 'this.' keyword set the value of a field outside of the method
+// 'this.' keyword set the value of a field that is outside of the method
 // classes need to be initialized with the new keyword, no default value is attached to them
 // 'get' method returns the value of the field, getter, has no parameters
 // String is a special class
