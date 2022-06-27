@@ -1,17 +1,35 @@
 package section7OOP2;
 
-public class Car extends Vehicle {
-    private int doors;
-    private int engineCapacity;
+public class Car {
+    private boolean engine;
+    private int cylinders;
+    private String name;
+    private int wheels;
 
-    public Car(String name, int doors, int engineCapacity) {
-        super(name);
-        this.doors = doors;
-        this.engineCapacity = engineCapacity;
+    public Car(int cylinders, String name) {
+        this.engine = true;
+        this.cylinders = cylinders;
+        this.name = name;
+        this.wheels = 4;
+    }
+
+    public String startEngine() {
+        return this.getName() +  "Car -> startEngine()";
+    }
+
+    public String accelerate() {
+        return this.getName() +  " -> accelerate()";
+    }
+
+    public String brake() {
+        return this.getName() + " -> brake()";
+    }
+
+    public int getCylinders() {
+        return cylinders;
+    }
+
+    public String getName() {
+        return name;
     }
 }
-
-// composition deals with a 'has a' relationship
-// computer has a motherboard, case, monitor
-// computer is composed of the aforementioned
-
