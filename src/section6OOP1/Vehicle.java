@@ -29,4 +29,8 @@ public class Vehicle {
         this.hasAnEngine = false;
     }
 
+    public void move() {
+        System.out.println("Vehicle.move() called.");
+    }
+
 }
