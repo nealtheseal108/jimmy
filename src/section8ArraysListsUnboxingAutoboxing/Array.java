@@ -1,6 +1,6 @@
 package section8ArraysListsUnboxingAutoboxing;
 
-public class Arrays {
+public class Array {
     public static void main(String[] args) {
         int[] myIntArray = new int[25];
         myIntArray[5] = 50; // the 6th element is 50
@@ -28,4 +28,11 @@ public class Arrays {
 // use 'myArray.length' to dynamically access the length of an array
 // 'ArrayIndexOutOfBounds' exception will be thrown if one is trying to access/assign an index of an array that does not exist
 // arrays can be return types and parameters
+// the default value of a numeric element in an array is 0
+// the '[]' operator is called an array access operator
+// boolean default value in array is false
+// the 'new' operator is used to initialize and create an array and set the elements to their default values
+
+// arrays and strings a reference types
+//
 
