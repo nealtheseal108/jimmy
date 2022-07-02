@@ -19,4 +19,8 @@ public interface iTelephone {
 // and because interfaces are public static final by design
 // use the 'implements' keyword to implement interfaces
 // all methods from an interface have to be implemented in a class
-// you can create an instance of
+// you can create an instance of two classes using the same interface with the same variable name
+// as Java libraries extensively utilize interfaces, the processes to change return types and parameters is very simple
+// as all 'List' types are derived from the 'List' interface, on can use the 'List' keyword to instantiate another type of a List
+// to decide whether to use inheritance ('extends') or interfaces ('implements') in your code, consider the relationship of the final class to the "superclass"
+// a class can only inherit from one superclass, but you can implement from many interfaces
