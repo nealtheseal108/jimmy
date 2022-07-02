@@ -74,4 +74,5 @@ public class Gearbox {
 // you need to create an instance of the outer class to create an instance of the inner class
 
 // local classes are declared inside code blocks, useful for encapsulation
+// anonymous classes are lcoal classes without a name, have to be declared and instantiated at the same time, can only
 
