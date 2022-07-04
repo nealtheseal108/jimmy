@@ -2,28 +2,28 @@ package section9InnerAbstractClassesInterfaces;
 
 public class ListMain {
     public static void main(String[] args) {
-        MyLinkedList myLinkedList = new MyLinkedList(null);
-        myLinkedList.traverse(myLinkedList.getRoot());
+        SearchTree tree = new SearchTree(null);
+        tree.traverse(tree.getRoot());
 
-        myLinkedList.addItem(new Node("Darwin"));
-        myLinkedList.traverse(myLinkedList.getRoot());
+        tree.addItem(new Node("Darwin"));
+        tree.traverse(tree.getRoot());
 
-        myLinkedList.addItem(new Node("Brisbane"));
-        myLinkedList.traverse(myLinkedList.getRoot());
+        tree.addItem(new Node("Brisbane"));
+        tree.traverse(tree.getRoot());
 
         String stringData = "Darwin Brisbane Perth Adelaide Canberra Sydney Melbourne";
         String[] data = stringData.split(" ");
         for (int i = 0; i < data.length; i++) {
             String string = data[i];
-            myLinkedList.addItem(new Node(string));
+            tree.addItem(new Node(string));
         }
-        myLinkedList.traverse(myLinkedList.getRoot());
+        tree.traverse(tree.getRoot());
 
-        myLinkedList.removeItem(new Node("Brisbane"));
-        myLinkedList.traverse(myLinkedList.getRoot());
+        tree.removeItem(new Node("Brisbane"));
+        tree.traverse(tree.getRoot());
 
-        myLinkedList.removeItem(new Node("Melbourne"));
-        myLinkedList.traverse(myLinkedList.getRoot());
+        tree.removeItem(new Node("Melbourne"));
+        tree.traverse(tree.getRoot());
     }
 }
 

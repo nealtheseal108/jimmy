@@ -1,7 +1,5 @@
 package section9InnerAbstractClassesInterfaces;
 
-import section8ArraysListsUnboxingAutoboxing.Array;
-
 public class MyLinkedList implements NodeList {
     private ListItem root;
     public MyLinkedList(ListItem root) {
@@ -13,6 +11,7 @@ public class MyLinkedList implements NodeList {
         return root;
     }
 
+    @Override
     public boolean addItem(ListItem newItem) {
         if (newItem != null) {
             if (this.root == null) {
