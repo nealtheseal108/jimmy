@@ -6,7 +6,7 @@ public class Theatre {
     private final String theatreName;
     public   List<Seat> seats = new ArrayList<>();
 
-    static final Comparator<Seat> PRICE_ORDER = new Comparator<Seat>() { // anonymous inner class
+    static final Comparator<Seat> PRICE_ORDER = new Comparator<>() { // anonymous inner class
         @Override
         public int compare(Seat seat1, Seat seat2) {
             if (seat1.getPrice() < seat2.getPrice()) {
