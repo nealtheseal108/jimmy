@@ -107,16 +107,3 @@ public class HeavenlyMain {
     }
 }
 
-// the '.addAll()' method adds all the items of one set to another
-// note that for each 'HeavenlyBody' in this class, only one object in memory exists, but there are multiple references to each one at different points in the code
-// note that for an object to be deemed as "repeated" by a Set, all objects within the object must be identical to its counterpart
-// one can overwrite the '.equals()' method for this
-// when storing object in "'Hash' Collections, the hashcode of the object determines which "bucket" an object will go into
-// any objects that are equal will ultimately have the same hashcode, and thus will go into the same bucket
-// if two objects belong to the same bucket than an '.equals()' comparison will return 'true'
-// but a '.equals()' comparison returning 'true' doesn't necessarily mean that the two objects belong to the same bucket, as ultimately only deals with if the two objects reference the same object in memory
-// if a duplicate object has a different hashcode than the original, it will be added to the Collection
-// if we try to iterate through the data structure and remove the duplicate, we might end up finding the original first and removing that one
-// this is why there needs to be a strict relationship between the hashcode and the '.equals()' method in certain circumstances
-// this is why we override them in certain cases
-// we also have to override '.equals()' to only check for that single field
