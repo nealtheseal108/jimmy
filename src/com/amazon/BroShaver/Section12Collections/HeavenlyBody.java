@@ -46,9 +46,11 @@ public final class HeavenlyBody {
         return this.name.equals(objName);
     }
 
-
-
-
+    @Override
+    public int hashCode() {
+        System.out.println("hashCode() called.");
+        return this.name.hashCode() + 57;
+    }
 }
 
 // whereas a List is an ordered Collection of items that can contain duplicates, a Set has no defined order (defined as chaotic) and cannot contain duplicates
@@ -57,3 +59,7 @@ public final class HeavenlyBody {
 // using immutable objects can cause problems in a Set; same with storing a Set in itself
 // the best-known implementation of the Set interface is the HashSet class, which uses hashes and a HashMap to store the items
 // whenever an element is added to a HashSet, the object becomes a key in the internal HashMap
+// whenever an element is added to a HashSet, Java checks whether it is equal to an object already in the Set using the '.equals()' method, which checks equalities using the hashcode of the object
+// however, if one field of two compared objects are equal and the other(s) are not, they will return different hashcodes, causing them both to be present in Set
+// this might be an inadvertent consequence of Java utilizing '.equals()' (which uses 'hashCode()') to compare objects
+// nonetheless, we can override the '.hashCode()' method for a class to return the hashcode value of only one field of the object (and adding an integer to make sure the returned value is not zero)

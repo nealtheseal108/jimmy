@@ -119,3 +119,4 @@ public class HeavenlyMain {
 // if we try to iterate through the data structure and remove the duplicate, we might end up finding the original first and removing that one
 // this is why there needs to be a strict relationship between the hashcode and the '.equals()' method in certain circumstances
 // this is why we override them in certain cases
+// we also have to override '.equals()' to only check for that single field
